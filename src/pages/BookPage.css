@@ -1,0 +1,127 @@
+/* Estilo general del contenedor de la página */
+.book-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+}
+
+/* Contenedor de detalles del libro */
+.book-details {
+    display: flex;
+    flex-direction: row;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 900px;
+    width: 100%;
+}
+
+/* Estilo de la imagen del libro */
+.book-image {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-right: 1px solid #ddd;
+}
+
+/* Contenedor de la información del libro */
+.book-info {
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Título del libro */
+.book-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Autor del libro */
+.book-author {
+    font-size: 18px;
+    font-style: italic;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+/* Descripción del libro */
+.book-description {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+/* Precio del libro */
+.book-price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #2c7a7b;
+    margin-bottom: 20px;
+}
+
+/* Botón para añadir al carrito */
+.add-to-cart-button {
+    display: inline-block;
+    background-color: #2c7a7b;
+    color: #ffffff;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover en el botón */
+.add-to-cart-button:hover {
+    background-color: #225e61;
+}
+
+/* Diseño responsivo */
+@media (max-width: 768px) {
+    .book-details {
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .book-image {
+        max-width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .book-info {
+        padding: 15px;
+    }
+
+    .book-title {
+        font-size: 20px;
+    }
+
+    .book-author {
+        font-size: 16px;
+    }
+
+    .book-price {
+        font-size: 18px;
+    }
+
+    .add-to-cart-button {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+}

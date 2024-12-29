@@ -1,0 +1,33 @@
+.book-item {
+    cursor: pointer;
+    text-align: center;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.book-cover {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.book-title {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 5px 0;
+}
+
+.book-author {
+    font-size: 1rem;
+    color: #777;
+}

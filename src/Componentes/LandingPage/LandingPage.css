@@ -1,0 +1,68 @@
+.landing-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    min-height: 100vh; /* Asegura que el contenedor ocupe el 100% de la altura de la ventana */
+    background-image: url("https://i.pinimg.com/originals/da/b7/19/dab719a473ad7edcf6871d655c0ea78e.gif");
+    background-size: cover; /* Hace que la imagen cubra toda el área del contenedor */
+    background-position: center center; /* Centra la imagen en el contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita si es más pequeña que la pantalla */
+}
+
+.landing-header h1{
+    color: #dfdff8;
+    font-family: "Tempus Sans ITC";
+    font-size: 70px;
+
+}
+.landing-header h2{
+    color: rgba(0, 255, 247, 0.85);
+    font-family: "Tempus Sans ITC";
+    font-size: 60px;
+}
+
+.landing-image-text {
+    display: flex;
+    flex-direction: unset;
+    align-items: center;
+    justify-content: normal; /* Espacio entre la imagen y el texto */
+    text-align: justify;
+}
+
+.landing-image {
+    display: flex;
+    max-width: 500px;
+    border-radius: 80px;
+    padding: 40px;
+}
+
+
+
+.landing-text {
+    display: flex;
+    flex: 2;
+    padding: 70px;
+    text-align: justify-all;
+
+}
+
+.landing-text p{
+    color: rgb(244, 226, 23);
+    font-family: "Tempus Sans ITC";
+    font-size: 45px;
+}
+
+.landing-footer {
+    width: 100%;
+    text-align: center;
+    position: relative; /* Necesario para que se posicione correctamente */
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para el footer */
+    color: white;
+    margin-top: auto; /* Empuja el pie de página hacia abajo */
+}
+
+
+.landing-footer p {
+color: #f0f0f4;
+}
